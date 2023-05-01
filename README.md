@@ -1,5 +1,4 @@
 To build docker:
-docker run  my-python-app
-
+docker build -t my-python-app .
 To run:
 docker run  my-python-app

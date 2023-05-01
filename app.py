@@ -1,4 +1,3 @@
-import string
 import boto3
 import json
 from datetime import datetime, timezone
@@ -10,7 +9,7 @@ def datetime_converter(obj):
 def get_launch_time(instance):
     return instance.launch_time
 
-def split_and_clean(s: string):
+def split_and_clean(s: str):
     items = s.split(',')
     items = [item.strip() for item in items]
     return items
@@ -24,7 +23,7 @@ def print_uptime(sorted_instances):
         print(f"Instance ID: {instance.id}, Time since launch: {time_since_launch} seconds")
 
 
-def etl(endpoint: string):
+def etl(endpoint: str):
     with open('regions.txt', 'r') as f:
         regions = split_and_clean(f.read())
 

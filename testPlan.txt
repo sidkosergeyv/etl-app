@@ -1,0 +1,14 @@
+TestPlan:
+1. Config file reading P2
+2. Region list extraction P2
+3. Services count extraction P1
+4. Breakdown into N per service chunks P0
+5. Spawning of N services P0
+6. The functionality of the spawned services P3
+
+Suggestions:
+1. Add logs
+2. Make it modular. Split ETL and API Route to different classes. Split methods of json files manipulations also to
+another helper class
+3. Improve error messaging
+4. Add service health check support
